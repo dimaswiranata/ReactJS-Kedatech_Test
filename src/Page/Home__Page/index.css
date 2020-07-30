@@ -2,6 +2,7 @@
   max-width: 1500px;
   margin-left: auto;
   margin-right: auto;
+  background-color: white;
 }
 
 .Home__Pricing__Section{
@@ -14,6 +15,6 @@
 
 .Home__PriceProduct__Grid{
   flex-grow: 1;
-  margin-right: 90px;
   margin-left: 90px;
+  margin-right: 90px;
 }

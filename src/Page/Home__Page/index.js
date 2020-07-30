@@ -3,6 +3,7 @@ import "./index.css";
 import Nav from "../../component/Nav";
 import Banner from "../../component/Banner";
 import Pricing from "../../component/Pricing";
+import Product from "../../component/Product";
 import Grid from '@material-ui/core/Grid';
 
 function index() {
@@ -18,13 +19,13 @@ function index() {
       <div className="Home__PriceProduct__Grid">
         <Grid container spacing={3}>
           <Grid item xs={4}>
-            <Pricing level="Basic"/>
+            <Product type='start'/>
           </Grid>
           <Grid item xs={4}>
-            <Pricing level="Pro"/>
+            <Product type='premium'/>
           </Grid>
           <Grid item xs={4}>
-            <Pricing level="Premium"/>
+            <Product type='advanced'/>
           </Grid>
         </Grid>
       </div>

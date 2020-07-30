@@ -1,0 +1,118 @@
+.Product{
+  width: 100%;
+}
+
+.Product__Title__Section{
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-top: 30px;
+  display: flex;
+  height: 60px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 0 20px 24px 0 rgba(0,0,0,0.5)
+}
+
+.Product__Title{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.Product__Title__Start{
+  color: #5CB5B9;
+}
+
+.Product__Title__Premium{
+  color: #FFA938;
+}
+
+.Product__Title__Advanced{
+  color: #F66871;
+}
+
+.Product__Section{
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: 0 20px 24px 0 rgba(0,0,0,0.5)
+}
+
+.Product__Section__Start{
+  background-color: #5CB5B9;
+}
+
+.Product__Section__Premium{
+  background-color: #FFA938;
+}
+
+.Product__Section__Advanced{
+  background-color: #F66871;
+}
+
+.Product__Section text{
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.Product__Section div{
+  height: 2px;
+  width: 120px;
+  background-color: white;
+  margin-bottom: 5px;
+}
+
+.Product__Section__Price{
+  font-size: 50px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.Product__Section__DescOne{
+  font-size: 20px;
+  color: #fff;
+  font-weight: bolder;
+  margin-top: 10;
+}
+
+.Product__Section__DescTwo{
+  font-size: 20px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.Product__Section__Button{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #fff;
+  color: #5CB5B9;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 10px;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.Product__Section__Button__Start{
+  color: #5CB5B9;
+}
+
+.Product__Section__Button__Premium{
+  color: #FFA938;
+}
+
+.Product__Section__Button__Advanced{
+  color: #F66871;
+}
