@@ -14,7 +14,7 @@
   background-color: #fff;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  box-shadow: 0 20px 24px 0 rgba(0,0,0,0.5)
+  box-shadow: 0 15px 15px 0 rgba(0,0,0,0.5)
 }
 
 .Product__Title{
@@ -44,7 +44,7 @@
   justify-content: center;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
-  box-shadow: 0 20px 24px 0 rgba(0,0,0,0.5)
+  box-shadow: 0 15px 15px 0 rgba(0,0,0,0.5)
 }
 
 .Product__Section__Start{

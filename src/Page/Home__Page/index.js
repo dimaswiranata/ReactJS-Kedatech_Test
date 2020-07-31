@@ -5,6 +5,7 @@ import Banner from "../../component/Banner";
 import Product from "../../component/Product";
 import Grid from '@material-ui/core/Grid';
 import Contact from "../../component/Contact";
+import About from "../../component/About";
 
 function Home() {
   const [windowSize, setWindowSize] = useState({
@@ -31,12 +32,11 @@ function Home() {
     <div className="Home">
       <Nav/>
       <Banner/>
-      <div className="Home__Pricing">
-        <div className="Home__Pricing__Section">
-          <h1 className="Home__Pricing__Title">PRICING</h1>
-        </div>
+      <About id="section1"/>
+      <div className="Home__Pricing" id="section2">
+        <h1 className="">PRICING</h1>
       </div>
-      <div className="Home__PriceProduct__Grid">
+      <div>
         <Grid 
           container 
           spacing={3} 
@@ -64,13 +64,13 @@ function Home() {
           // alignItems="stretch"
         >
           <Grid item xs={windowSize.width < 800 ? 12 : 4}>
-            <Contact type='reachus'/>
+            <Contact type='reachus' id="section3"/>
           </Grid>
           <Grid item xs={windowSize.width < 800 ? 12 : 4}>
-            <Contact type='general'/>
+            <Contact type='general' id="section3"/>
           </Grid>
           <Grid item xs={windowSize.width < 800 ? 12 : 4}>
-            <Contact type='mailus'/>
+            <Contact type='mailus' id="section3"/>
           </Grid>
         </Grid>
       </div>

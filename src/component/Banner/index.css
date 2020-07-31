@@ -3,3 +3,22 @@
   object-fit: contain;
   height: 600px;
 }
+
+.banner__section{
+  margin-left: 500px;
+  padding-top: 140px;
+  width: 550px;
+}
+
+.banner__section__two{
+  margin-left: 140px;
+  padding-top: 100px;
+  width: 550px;
+}
+
+.banner__text{
+  color: #000;
+  font-style: italic;
+  font-size: 16px;
+  font-family: monospace;
+}

@@ -4,10 +4,10 @@ import LogoBlue from "../../assets/logo/logo_blue.png";
 import LogoMerah from "../../assets/logo/logo_merah.png";
 import LogoOrange from "../../assets/logo/logo_orange.png";
 
-function index({type}) {
+function index({type, id}) {
   if (type === 'reachus'){
     return(
-      <div className="Contact">
+      <div className="Contact" id={id}>
         <div className="Contact__Section">
           <img
             className="Contact__Logo"
@@ -27,7 +27,7 @@ function index({type}) {
 
   if (type === 'general'){
     return(
-      <div className="Contact">
+      <div className="Contact" id={id}>
         <div className="Contact__Section">
           <img
             className="Contact__Logo"
@@ -88,7 +88,7 @@ function index({type}) {
 
   if (type === 'mailus'){
     return(
-      <div className="Contact">
+      <div className="Contact" id={id}>
         <div className="Contact__Section">
           <img
             className="Contact__Logo"
