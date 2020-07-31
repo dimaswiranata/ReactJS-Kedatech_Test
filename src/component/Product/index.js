@@ -13,7 +13,7 @@ const index = ({type}) => {
             ${type==='advanced' && "Product__Title__Advanced"}`
           }
         >
-          START
+          {type.toUpperCase()}
         </text>
       </div>
       <div className={

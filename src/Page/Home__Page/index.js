@@ -1,12 +1,32 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import "./index.css";
 import Nav from "../../component/Nav";
 import Banner from "../../component/Banner";
-import Pricing from "../../component/Pricing";
 import Product from "../../component/Product";
 import Grid from '@material-ui/core/Grid';
+import Contact from "../../component/Contact";
 
-function index() {
+function Home() {
+  const [windowSize, setWindowSize] = useState({
+    width: undefined,
+    height: undefined,
+  });
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    }
+    
+    window.addEventListener("resize", handleResize);
+    
+    handleResize();
+    
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <div className="Home">
       <Nav/>
@@ -17,15 +37,40 @@ function index() {
         </div>
       </div>
       <div className="Home__PriceProduct__Grid">
-        <Grid container spacing={3}>
-          <Grid item xs={4}>
+        <Grid 
+          container 
+          spacing={3} 
+          direction={windowSize.width < 700 && "column"}
+          justify="center"
+          // alignItems="stretch"
+        >
+          <Grid item xs={windowSize.width < 800 ? 12 : 4}>
             <Product type='start'/>
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={windowSize.width < 800 ? 12 : 4}>
             <Product type='premium'/>
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={windowSize.width < 800 ? 12 : 4}>
             <Product type='advanced'/>
+          </Grid>
+        </Grid>
+      </div>
+      <div className="Home__Contact__Grid">
+        <Grid 
+          container 
+          spacing={3} 
+          direction={windowSize.width < 700 && "column"}
+          justify="center"
+          // alignItems="stretch"
+        >
+          <Grid item xs={windowSize.width < 800 ? 12 : 4}>
+            <Contact type='reachus'/>
+          </Grid>
+          <Grid item xs={windowSize.width < 800 ? 12 : 4}>
+            <Contact type='general'/>
+          </Grid>
+          <Grid item xs={windowSize.width < 800 ? 12 : 4}>
+            <Contact type='mailus'/>
           </Grid>
         </Grid>
       </div>
@@ -33,4 +78,4 @@ function index() {
   )
 }
 
-export default index
+export default Home

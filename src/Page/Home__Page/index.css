@@ -14,7 +14,10 @@
 .Home__Pricing__Title{}
 
 .Home__PriceProduct__Grid{
-  flex-grow: 1;
-  margin-left: 90px;
-  margin-right: 90px;
+  /* display: flex; */
+}
+
+.Home__Contact__Grid{
+  display: flex;
+  background-color: #3f464b;
 }

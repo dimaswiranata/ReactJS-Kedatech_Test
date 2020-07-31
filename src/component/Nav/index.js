@@ -5,6 +5,10 @@ import Logo from "../../assets/logo/logo.png";
 
 function Nav() {
   const [show, handleShow] = useState(false)
+  const [windowSize, setWindowSize] = useState({
+    width: undefined,
+    height: undefined,
+  });
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -15,6 +19,21 @@ function Nav() {
       }
     });
   }, [])
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    }
+    
+    window.addEventListener("resize", handleResize);
+    
+    handleResize();
+    
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   
   return (
     <div className={`nav ${show && "nav__scroll"}`}>
@@ -28,7 +47,20 @@ function Nav() {
               alt="logo"
             />
             <div className="nav__option">
-              <span className="nav__optionLogo">HOME</span>
+              <span 
+                className={
+                  windowSize.width < 900 ? 
+                    `${show ? 
+                      "nav__optionLogo" 
+                      : 
+                      "nav__optionLogo__black"
+                    }` 
+                    : 
+                    "nav__optionLogo"
+                }
+              >
+                HOME
+              </span>
             </div>
           </div>
         </Link>
