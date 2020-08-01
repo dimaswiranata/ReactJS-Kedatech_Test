@@ -49,6 +49,18 @@
   margin-bottom: 10px;
 }
 
+@media (max-width: 1000px) {
+  .Contact__Text{
+    width: 200px;
+  }
+  .Product__Table{
+    width: 200px;
+  }
+  .Product__Email{
+    width: 50px;
+  }
+} 
+
 .Product__Table{
   margin-left: 60px;
   margin-bottom: 10px;
