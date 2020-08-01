@@ -70,3 +70,14 @@
   border-width: 2px;
   border-color: white;
 }
+
+
+@media (max-width: 1000px) {
+  .About__Desc__Subs{
+    width: 400px;
+  }
+  
+  .About__Desc__SubTwo{
+    width: 400px;
+  }
+} 
